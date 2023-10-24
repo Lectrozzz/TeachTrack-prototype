@@ -1,6 +1,7 @@
 # TeachTrack
 
 The best way to track and manage your teaching progress.
+
 [visit](https://lectrozzz.github.io/TeachTrack/)
 
 ## Background
