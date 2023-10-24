@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teaching Fee Calculator</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>TeachTrack</h1>
+            <hr>
+        </div>
+    </header>
+    <section>
+        <div>
+            <div class="feedbackBox">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSev1Sv-NbiLAuA3xM0eh7iuEx3iaG7LoRBc-ReIemVF8MeSZw/viewform" target="_blank">Enter Teaching feedback here</a>
+            </div>
+            <div class="headTable">
+                <h2>Class List</h2>
+            </div>
+            <div class="table primaryTable">
+                <table id="courseTable">
+                    <tr>
+                        <th>Status</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Type</th>
+                        <th>Location</th>
+                        <th>Language</th>
+                        <th>Student</th>
+                        <th>Round</th>
+                        <th>Previous Lesson</th>
+                        <th>Next class</th>
+                        <th class="shortTable">Fee</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr id="controlNode">
+                        <form id="addCourse">
+                            <td class="statusBox">
+                                <!-- placeholder for status -->
+                            </td>
+                            <td>
+                                <input type="text" id="courseId">
+                            </td>
+                            <td>
+                                <select name="" id="courseList">
+                                    <option value="none" selected disabled hidden>Select</option>
+                                    <option value="Python Start Year 1">Python Start y1</option>
+                                    <option value="Python Start Year 2">Python Start y2</option>
+                                    <option value="Python Pro Year 1">Python Pro y1</option>
+                                    <option value="Python Pro Year 2">Python Pro y2</option>
+                                    <option value="Visual Programming">Mars Academy</option>
+                                    <option value="Coding Knight">Coding Knight</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="" id="classTypeList">
+                                    <option value="" selected disabled hidden>Select</option>
+                                    <option value="Introduction">IL</option>
+                                    <option value="Weekly group">Weekly Group</option>
+                                    <option value="Intensive group">Intensive Group</option>
+                                    <option value="Weekly private">Weekly Private</option>
+                                    <option value="Intensive private">Intensive Private</option>
+                                    <option value="Make up">Make Up</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="" id="locationList">
+                                    <option value="" selected disabled hidden>Select</option>
+                                    <option value="ImPark Samyan">ImPark</option>
+                                    <option value="Online">Online</option>
+                                    <option value="Gateway Ekkamai">Gateway Ekkamai</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="" id="courseLanguage">
+                                    <option value="" selected disabled hidden>Select</option>
+                                    <option value="Thai">Thai</option>
+                                    <option value="English">English</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="number" value="0" class="shortInput" id="studentCount">
+                            </td>
+                            <td>
+                                <input type="number" value="0" class="shortInput" id="roundCount">
+                            </td>
+                            <td>
+                                <input type="text" id="previousLesson">
+                            </td>
+                            <td>
+                                <input type="date" id="nextClass">
+                            </td>
+                            <td>
+                                <!-- placeholder for fees -->
+                            </td>
+                            <td>
+                                <input type="submit" value="Add" class="btn addButton">
+                            </td>
+                        </form>
+                    </tr>
+                </table>
+            </div>
+            <div class="refreshButtonBox">
+                <button class="btn refreshButton" id="refreshButton">Refresh</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="headTable">
+            <h2>Summary</h2>
+        </div>
+        <div class="table summaryTable">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Total course:</td>
+                    <td id="courseCount">0</td>
+                </tr>
+                <tr>
+                    <td>Total teaching fee:</td>
+                    <td id="teachingFee">0</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
