@@ -1,6 +1,7 @@
 # TeachTrack
 
 The best way to track and manage your teaching progress.
+[visit](https://lectrozzz.github.io/TeachTrack/)
 
 ## Background
 This project came from my pain-point when I'm a Python teacher at Algorithmics school. There're so many classes that I teach so I want to record there progress of each courses and also calculate the income that I got from each class. Currently I need to store all of my class history, update the data and calculate teaching fee by Microsoft Excel which doesn't fully satisfy my need. I still need to do something manually such as changing class status and rearrange the data by myself. So I decided to create a web-app to slove all of these problem and include some of the features that I might need in the future too. 
